@@ -1,0 +1,99 @@
+.wrap {
+  width: 100%;
+  background-color: #cd353b;
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+  .vedioWrap {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .commentsTitle {
+    width: 100%;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 30px;
+    padding-left: 30px;
+    .textLess {
+      display: flex;
+      align-items: center;
+    }
+    .textLess::before{
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 30px;
+      background-color: #ffffff;
+      margin-right: 15px;
+    }
+  }
+
+  .load_more {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .load_more .load_more_button {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 100px;
+    padding: 10px;
+    display: inline-block;
+    color: #cd353b;
+  }
+  
+  .load_more_button:hover {
+    background-color: #cd353b;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  .grid_item {
+    cursor: pointer;
+    width: 300px;
+    border-radius: 4px;
+    padding: 20px 20px 20px 10px;
+    margin-bottom: 16px;
+    overflow: auto;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    vertical-align: middle;
+    margin-top: 30px;
+  }
+  
+  .grid_item .avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #eee;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .grid_item .userinfo {
+    float: left;
+    height: 100%;
+  }
+  .grid_item .content {
+    color: #333;
+    padding-left: 80px;
+    /* text-indent: 2em; */
+  }
+  .grid_item .nickname {
+    color: #999;
+    font-size: 13px;
+    text-align: right;
+    padding-top: 6px;
+  }
+  
+  .grid_item .time {
+    color: #aaa;
+    font-size: 12px;
+    text-align: right;
+    padding-top: 2px;
+  }
+}
