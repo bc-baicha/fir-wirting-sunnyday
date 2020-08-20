@@ -28,6 +28,7 @@ const config: IConfig =  {
       },
     }],
   ],
+  outputPath: '/dist'
 }
 
 export default config;
