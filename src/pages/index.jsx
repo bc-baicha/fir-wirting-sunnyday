@@ -101,7 +101,7 @@ export default function () {
         />
       </div>
       <Comments text='热评 Top15' />
-      <div id="hot-comment-list">
+      <div style={{width:'100%'}} id="hot-comment-list">
         {hotComments.map(({ user, content, commentId, time }) => (
           <CommentCard
             key={commentId}
@@ -114,7 +114,7 @@ export default function () {
       </div>
 
       <Comments text='评论回忆' />
-      <div style={{width:'100%'}} id="comment-list">
+      <div id="comment-list">
         {comments.map(({ user, content, commentId, time }) => (
           <CommentCard
             key={commentId}
