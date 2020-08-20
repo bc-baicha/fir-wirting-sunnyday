@@ -27,7 +27,6 @@ let hotCommentInst;
 let commentInst;
 
 function CommentCard({ avatarUrl, nickname, content, time }) {
-  console.log(time)
   return (
     <div className={styles.grid_item} style={{ backgroundColor: "#fff" }}>
       <div className={styles.userinfo}>
@@ -115,7 +114,7 @@ export default function () {
       </div>
 
       <Comments text='评论回忆' />
-      <div id="comment-list">
+      <div style={{width:'100%'}} id="comment-list">
         {comments.map(({ user, content, commentId, time }) => (
           <CommentCard
             key={commentId}
